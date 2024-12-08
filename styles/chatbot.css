@@ -1,0 +1,8 @@
+#chatbot-container:hover {
+    background: #f39c12;
+  }
+  
+  #chatbot-icon {
+    background-image: url('images/chatbot-icon.svg');
+  }
+  

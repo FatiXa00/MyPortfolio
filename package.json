@@ -1,0 +1,17 @@
+{
+  "name": "fatima-zahraa-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio personnel de Fatima Zahraa - Développeuse Mobile & Web Full Stack",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0",
+    "serve": "^14.0.0"
+  },
+  "devDependencies": {},
+  "author": "Fatima Zahraa",
+  "license": "MIT"
+}
