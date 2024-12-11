@@ -64,17 +64,17 @@
       "highlights": ["Analyse des séries temporelles pour la prédiction des prix", "Utilisation de LSTM pour capturer les dépendances à long terme", "Visualisation des résultats pour interprétation", "Optimisation des performances grâce à TensorFlow"]
     },
     {
-      "id": 8,
       "title": "MovieApp",
       "year": "2024",
-      "tech": ["Java", "Android", "SQLite", "YouTube API"],
+      "tech": ["Java", "Android", "API (themoviedb.org)", "Volley", "Glide"],
       "category": "Application Mobile",
-      "description": "Application mobile intuitive pour la gestion et le suivi des films favoris. Elle est connectée à une base de données de films et intègre un accès à YouTube pour visionner les bandes-annonces.",
+      "description": "Application mobile interactive pour la gestion et le suivi des films favoris. Elle utilise l'API The Movie Database pour récupérer les informations sur les films et afficher les bandes-annonces directement depuis l'application.",
       "highlights": [
-        "Base de données locale pour le suivi des films favoris",
-        "Accès direct aux bandes-annonces via l'API YouTube",
-        "Interface utilisateur intuitive",
-        "Fonctionnalités interactives pour l'organisation et la recherche de films"
+        "Connexion à l'API The Movie Database pour récupérer les données des films",
+        "Affichage des films favoris avec détails et bande-annonce",
+        "Interface utilisateur interactive et fluide",
+        "Fonctionnalité de recherche et filtrage des films",
+        "Affichage des cinémas et localisation sur Google Maps"
       ]
     }
     
