@@ -1,18 +1,20 @@
 // Typewriter effect for "About Me" text
 document.addEventListener('scroll', function () {
-    const bioText = document.querySelector('.bio-text p');
-    if (window.scrollY > bioText.offsetTop - window.innerHeight) {
-      bioText.classList.add('visible');
-    }
+  const bioText = document.querySelector('.bio-text p');
+  if (window.scrollY > bioText.offsetTop - window.innerHeight) {
+    bioText.classList.add('visible');
+  }
+});
+
+// Interactive hover effects on project tags
+document.querySelectorAll('.tag').forEach(tag => {
+  tag.addEventListener('mouseenter', () => {
+    tag.style.backgroundColor = '#e67e22';
   });
-  
-  // Interactive hover effects on project tags
-  document.querySelectorAll('.tag').forEach(tag => {
-    tag.addEventListener('mouseenter', () => {
-      tag.style.backgroundColor = '#e67e22';
-    });
-    tag.addEventListener('mouseleave', () => {
-      tag.style.backgroundColor = '#f39c12';
+  tag.addEventListener('mouseleave', () => {
+    tag.style.backgroundColor = '#f39c12';
+  });
+});
 
 // Initialize Particles.js
 particlesJS('particles-js', {
@@ -203,6 +205,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Scroll event for reveal animations
   window.addEventListener('scroll', revealOnScroll);
   revealOnScroll(); // Initial check
-});   });
-  });
-  
+});

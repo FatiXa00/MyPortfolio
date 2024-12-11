@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/chatbot.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/timeline.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -24,6 +25,8 @@
             <a href="#" class="logo">FS.</a>
             <div class="nav-links">
                 <a href="#about" class="nav-link">À propos</a>
+                <a href="#formation" class="nav-link">Formation</a>
+                <a href="#experiences" class="nav-link">Expériences</a>
                 <a href="#skills" class="nav-link">Compétences</a>
                 <a href="#projects" class="nav-link">Projets</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -62,10 +65,53 @@
                     Mon parcours m'a permis d'acquérir une solide expertise en React Native, Flutter, et dans l'intégration 
                     de solutions IA.</p>
                 </div>
-                <div class="timeline" id="experience-timeline"></div>
             </div>
         </div>
     </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="section">
+        <div class="main-container">
+            <h2 class="section-title">Formation</h2>
+            <div class="education-timeline" id="education-timeline">
+                <!-- Education items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="section">
+        <div class="main-container">
+            <h2 class="section-title">Expériences</h2>
+            <div class="experience-timeline" id="experience-timeline">
+                <!-- Experience items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates -->
+    <template id="education-item-template">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date"></div>
+                <h3 class="timeline-title"></h3>
+                <p class="timeline-description"></p>
+            </div>
+        </div>
+    </template>
+
+    <template id="experience-item-template">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date"></div>
+                <h3 class="timeline-title"></h3>
+                <p class="timeline-description"></p>
+                <div class="tech-tags">
+                    <!-- Tech tags will be added dynamically -->
+                </div>
+            </div>
+        </div>
+    </template>
 
     <!-- Skills Section -->
     <section id="skills" class="section skills-section">
@@ -168,5 +214,7 @@
     <script src="scripts/scripts.js"></script>
     <script src="scripts/content-loader.js"></script>
     <script src="scripts/contact.js"></script>
+    <script src="scripts/timeline.js"></script>
+    <script src="scripts/timeline-loader.js"></script>
 </body>
 </html>

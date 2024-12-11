@@ -1,0 +1,22 @@
+{
+    "experiences": [
+        {
+            "year": "2024",
+            "company": "Shared System",
+            "description": "Conception et développement d'une application mobile multiplateforme pour la gestion de la santé personnelle",
+            "technologies": ["React Native", "Expo", "Firebase", "Figma", "UML"]
+        },
+        {
+            "year": "2023",
+            "company": "ABNSOFT",
+            "description": "Développement d'une application de gestion des tickets sur desktop",
+            "technologies": ["C#", ".Net Framework", "SQL Server", "UML"]
+        },
+        {
+            "year": "2022",
+            "company": "INTELCIA - Digital Factory",
+            "description": "Conception et développement d'une application web intégrée dans un environnement Agile",
+            "technologies": ["Angular", "Postman", "Laravel", "Scrum"]
+        }
+    ]
+}

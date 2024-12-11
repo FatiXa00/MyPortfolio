@@ -1,101 +1,113 @@
 {
-"projects": [
-  {
-    "id": 1,
-    "title": "Digital Banking",
-    "year": "2024",
-    "tech": ["JEE", "Angular", "MySQL"],
-    "category": "Application Web",
-    "description": "Une plateforme bancaire numérique moderne offrant des transactions financières sécurisées et une gestion des comptes utilisateurs.",
-    "highlights": ["Authentification sécurisée", "Transactions en temps réel", "Design réactif"]
-  },
-  {
-    "id": 2,
-    "title": "HeartCare",
-    "year": "2022-2024",
-    "tech": ["Django", "Jira", "Méthodologies Agile"],
-    "category": "Santé",
-    "description": "Projet d'intégration axé sur la gestion et le suivi des données de santé en utilisant l'architecture MVC et des pratiques Agile.",
-    "highlights": ["Gestion des données de santé", "Suivi en temps réel", "Intégration Agile avec Jira"]
-  },
-  {
-    "id": 3,
-    "title": "SalesMaster",
-    "year": "2024",
-    "tech": ["Spring Boot", "Angular", "PostgreSQL"],
-    "category": "Application Web",
-    "description": "Une application de gestion des ventes offrant le suivi des données, des analyses et des rapports détaillés.",
-    "highlights": ["Visualisation des données", "Rapports analytiques", "Pratiques Agile"]
-  },
-  {
-    "id": 4,
-    "title": "Quiz",
-    "year": "2024",
-    "tech": ["Java", "Android"],
-    "category": "Application Mobile",
-    "description": "Application mobile interactive de quiz pour des objectifs éducatifs, avec un suivi en temps réel.",
-    "highlights": ["Évaluation en temps réel", "Suivi des progrès", "Apprentissage interactif"]
-  },
-  {
-    "id": 5,
-    "title": "FitWave",
-    "year": "2024",
-    "tech": ["React Native", "Expo", "Firebase", "Figma"],
-    "category": "Application Mobile",
-    "description": "Application mobile dédiée à la gestion de la santé personnelle, incluant le suivi des activités physiques, de la nutrition et des rendez-vous médicaux.",
-    "highlights": ["Suivi des activités physiques", "Gestion des rendez-vous médicaux", "Suivi de la nutrition", "Objectifs de bien-être"]
-  },
-  {
-    "id": 6,
-    "title": "Application Flutter de Classification des Fruits",
-    "year": "2024",
-    "tech": ["Flutter", "CNN", "RAG Model", "Firebase"],
-    "category": "Application Mobile",
-    "description": "Application mobile innovante permettant la classification des fruits à partir d'une photo et intégrant un chatbot interactif utilisant un modèle RAG pour des réponses personnalisées.",
-    "highlights": ["Classification des fruits via un modèle CNN", "Interaction personnalisée grâce au chatbot RAG", "Interface utilisateur intuitive", "Photographie et analyse en temps réel"]
-  },
-  {
-    "id": 7,
-    "title": "Modèle de Prédiction de Trading",
-    "year": "2024",
-    "tech": ["Python", "LSTM", "RNN", "TensorFlow"],
-    "category": "Machine Learning",
-    "description": "Développement d'un modèle de machine learning basé sur LSTM et RNN pour la prédiction des tendances de trading à partir de séries temporelles financières.",
-    "highlights": ["Analyse des séries temporelles pour la prédiction des prix", "Utilisation de LSTM pour capturer les dépendances à long terme", "Visualisation des résultats pour interprétation", "Optimisation des performances grâce à TensorFlow"]
-  }
-],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Digital Banking",
+      "year": "2024",
+      "tech": ["JEE", "Angular", "MySQL"],
+      "category": "Application Web",
+      "description": "Une plateforme bancaire numérique moderne offrant des transactions financières sécurisées et une gestion des comptes utilisateurs.",
+      "highlights": ["Authentification sécurisée", "Transactions en temps réel", "Design réactif"]
+    },
+    {
+      "id": 2,
+      "title": "HeartCare",
+      "year": "2022-2024",
+      "tech": ["Django", "Jira", "Méthodologies Agile"],
+      "category": "Santé",
+      "description": "Projet d'intégration axé sur la gestion et le suivi des données de santé en utilisant l'architecture MVC et des pratiques Agile.",
+      "highlights": ["Gestion des données de santé", "Suivi en temps réel", "Intégration Agile avec Jira"]
+    },
+    {
+      "id": 3,
+      "title": "SalesMaster",
+      "year": "2024",
+      "tech": ["Spring Boot", "Angular", "PostgreSQL"],
+      "category": "Application Web",
+      "description": "Une application de gestion des ventes offrant le suivi des données, des analyses et des rapports détaillés.",
+      "highlights": ["Visualisation des données", "Rapports analytiques", "Pratiques Agile"]
+    },
+    {
+      "id": 4,
+      "title": "Quiz",
+      "year": "2024",
+      "tech": ["Java", "Android"],
+      "category": "Application Mobile",
+      "description": "Application mobile interactive de quiz pour des objectifs éducatifs, avec un suivi en temps réel.",
+      "highlights": ["Évaluation en temps réel", "Suivi des progrès", "Apprentissage interactif"]
+    },
+    {
+      "id": 5,
+      "title": "FitWave",
+      "year": "2024",
+      "tech": ["React Native", "Expo", "Firebase", "Figma"],
+      "category": "Application Mobile",
+      "description": "Application mobile dédiée à la gestion de la santé personnelle, incluant le suivi des activités physiques, de la nutrition et des rendez-vous médicaux.",
+      "highlights": ["Suivi des activités physiques", "Gestion des rendez-vous médicaux", "Suivi de la nutrition", "Objectifs de bien-être"]
+    },
+    {
+      "id": 6,
+      "title": "Application Flutter de Classification des Fruits",
+      "year": "2024",
+      "tech": ["Flutter", "CNN", "RAG Model", "Firebase"],
+      "category": "Application Mobile",
+      "description": "Application mobile innovante permettant la classification des fruits à partir d'une photo et intégrant un chatbot interactif utilisant un modèle RAG pour des réponses personnalisées.",
+      "highlights": ["Classification des fruits via un modèle CNN", "Interaction personnalisée grâce au chatbot RAG", "Interface utilisateur intuitive", "Photographie et analyse en temps réel"]
+    },
+    {
+      "id": 7,
+      "title": "Modèle de Prédiction de Trading",
+      "year": "2024",
+      "tech": ["Python", "LSTM", "RNN", "TensorFlow"],
+      "category": "Machine Learning",
+      "description": "Développement d'un modèle de machine learning basé sur LSTM et RNN pour la prédiction des tendances de trading à partir de séries temporelles financières.",
+      "highlights": ["Analyse des séries temporelles pour la prédiction des prix", "Utilisation de LSTM pour capturer les dépendances à long terme", "Visualisation des résultats pour interprétation", "Optimisation des performances grâce à TensorFlow"]
+    },
+    {
+      "id": 8,
+      "title": "MovieApp",
+      "year": "2024",
+      "tech": ["Java", "Android", "SQLite", "YouTube API"],
+      "category": "Application Mobile",
+      "description": "Application mobile intuitive pour la gestion et le suivi des films favoris. Elle est connectée à une base de données de films et intègre un accès à YouTube pour visionner les bandes-annonces.",
+      "highlights": [
+        "Base de données locale pour le suivi des films favoris",
+        "Accès direct aux bandes-annonces via l'API YouTube",
+        "Interface utilisateur intuitive",
+        "Fonctionnalités interactives pour l'organisation et la recherche de films"
+      ]
+    }
+    
+  ],
   "skills": {
-    "languages": ["C/C++/C#", "JavaScript", "Python", "Java", "TypeScript","PHP"],
-    "frameworks": ["Angular", "Spring Boot", "Django", "JEE","Node.js", "React"],
-    "databases": ["Oracle", "SQL Server", "MySQL","PL-SQL","Firebase","PostgreSQL"],
-    "Gestion de Projet": ["Agile", "Scrum","Jira"],
+    "languages": ["C/C++/C#", "JavaScript", "Python", "Java", "TypeScript", "PHP"],
+    "frameworks": ["Angular", "Spring Boot", "Django", "JEE", "Node.js", "React"],
+    "databases": ["Oracle", "SQL Server", "MySQL", "PL-SQL", "Firebase", "PostgreSQL"],
+    "Gestion de Projet": ["Agile", "Scrum", "Jira"],
     "web": ["HTML", "CSS", "Bootstrap"],
     "mobile": ["React Native", "Flutter"],
     "devops": ["Azure", "Docker"],
-    "OS": ["Windows", "Linux","Mac"],
+    "OS": ["Windows", "Linux", "Mac"],
     "IDE": ["Visual Studio Code", "IntelliJ IDEA", "Eclipse"],
     "version control": ["Git", "GitHub"],
     "Modelisation": ["UML", "Merise"],
     "API": ["REST", "GraphQL"],
     "test": ["Junit"],
-    "Erp": ["Sage","Odoo"],
-    
+    "Erp": ["Sage", "Odoo"],
     "langues": ["Arabe", "Français", "Anglais"],
-    
     "certifications": [
-        "Python for Everybody",
-        "Machine Learning with Python",
-        "Data Visualization with Python",
-        "Java OOP",
-        "React Native",
-        "Docker & Kubernetes",
-        "Azure Fundamentals",
-        "Software Engineering with UML",
-        "Introduction to Git and GitHub",
-        "Building Scalable Java Microservices with Spring Boot and Spring Cloud",
-        "Étudier en France: French Intermediate course B1-B2",
-        "The Art of the Job Interview"
-      ]
-    
+      "Python for Everybody",
+      "Machine Learning with Python",
+      "Data Visualization with Python",
+      "Java OOP",
+      "React Native",
+      "Docker & Kubernetes",
+      "Azure Fundamentals",
+      "Software Engineering with UML",
+      "Introduction to Git and GitHub",
+      "Building Scalable Java Microservices with Spring Boot and Spring Cloud",
+      "Étudier en France: French Intermediate course B1-B2",
+      "The Art of the Job Interview"
+    ]
   }
 }
