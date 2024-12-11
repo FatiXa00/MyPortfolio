@@ -81,7 +81,7 @@
   ],
   "skills": {
     "languages": ["C/C++/C#", "JavaScript", "Python", "Java", "TypeScript", "PHP"],
-    "frameworks": ["Angular", "Spring Boot", "Django", "JEE", "Node.js", "React"],
+    "frameworks": ["Angular", "Spring Boot/JEE", "Django", "Node.js", "React"],
     "databases": ["Oracle", "SQL Server", "MySQL", "PL-SQL", "Firebase", "PostgreSQL"],
     "Gestion de Projet": ["Agile", "Scrum", "Jira"],
     "web": ["HTML", "CSS", "Bootstrap"],
