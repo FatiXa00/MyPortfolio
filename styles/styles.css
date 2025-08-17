@@ -1160,12 +1160,10 @@ textarea {
     }
 }
 
-
 /* ======================================================= */
-/* Responsive Design - Media Queries */
+/* Responsive Design - Media Queries (Definitive Mobile Fix) */
 /* ======================================================= */
 
-/* For tablets and mobile phones */
 @media (max-width: 768px) {
     .section {
         padding: 60px 20px;
@@ -1175,67 +1173,78 @@ textarea {
         padding: 0 20px;
     }
     
-    /* --- MOBILE NAV --- */
     .nav {
         padding: 15px 20px;
     }
     .nav-links {
-        display: none; /* Hide nav links for a clean mobile view */
+        display: none;
     }
 
-    /* --- MOBILE HERO SECTION --- */
+    /* --- HERO SECTION MOBILE FIX --- */
+    .hero {
+        /* This is the key change. 'dvh' respects the browser's UI (address bar). */
+        min-height: 100dvh; /* Dynamic Viewport Height for modern mobile */
+        min-height: -webkit-fill-available; /* Fallback for older iOS Safari */
+
+        /* This ensures perfect centering */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0; /* Remove top padding as flexbox will center it */
+    }
+    
     .hero-content {
-        grid-template-columns: 1fr; /* Stack content vertically */
+        grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
-        padding: 4rem 1rem 2rem 1rem; /* Adjust padding for better vertical centering */
+        padding: 2rem 0; /* Only vertical padding */
+        width: 100%; /* Ensure it takes full width of parent */
     }
     .hero-text {
-        order: 2; /* Text goes below the image */
+        order: 2;
     }
     .hero-image {
-        order: 1; /* Image goes on top */
+        order: 1;
     }
     .hero-image img {
-        width: 220px; /* Make the image smaller */
-        height: 220px;
+        width: 200px;
+        height: 200px;
         margin: 0 auto;
     }
     .hero-title {
-        font-size: 2.5rem; /* Make the title smaller */
+        font-size: 2.5rem;
     }
     .hero-subtitle, .hero-description {
-        font-size: 1rem; /* Adjust paragraph text size */
-        max-width: 100%; /* Allow text to use the full width */
+        font-size: 1rem;
     }
     .hero-buttons {
-        justify-content: center; /* Center the buttons */
+        justify-content: center;
     }
 
-    /* --- MOBILE SECTIONS & GRIDS --- */
+    /* --- OTHER SECTIONS ON MOBILE --- */
     .section h2 {
         font-size: 2rem;
     }
     .skills-container,
     .projects-container {
-        grid-template-columns: 1fr; /* Stack cards vertically */
+        grid-template-columns: 1fr;
     }
     .project-card-container {
-        height: auto; /* Let content define the card height on mobile */
-        min-height: 480px; /* But ensure a reasonable minimum height */
+        height: auto;
+        min-height: 480px;
     }
     .project-card-front {
-        padding: 1.5rem; /* Slightly less padding on mobile */
+        padding: 1.5rem;
     }
 }
 
-/* For small mobile phones */
 @media (max-width: 480px) {
     .main-container {
         padding: 0 15px;
     }
     .hero-title {
-        font-size: 2.2rem; /* Even smaller title for very small screens */
+        font-size: 2.2rem;
     }
     .btn {
         padding: 12px 24px;
