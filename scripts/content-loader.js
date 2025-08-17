@@ -117,3 +117,6 @@ async function initializeContent() {
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', initializeContent);
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
