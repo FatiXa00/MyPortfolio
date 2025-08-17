@@ -1,6 +1,13 @@
 {
     "experiences": [
+
+
         {
+            "year": "2025",
+            "company": "CGI technologies et solutions Maroc",
+            "description": "Développement d'une application desktop pour l'audit et le monitoring des installations énergétiques",
+            "technologies": ["WPF", "C#", "SQL Server", "GitLab", "Entity Framework"]
+        },        {
             "year": "2024",
             "company": "Shared System",
             "description": "Conception et développement d'une application mobile multiplateforme pour la gestion de la santé personnelle",

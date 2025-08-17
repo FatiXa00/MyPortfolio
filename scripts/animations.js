@@ -88,7 +88,7 @@ const initFloatingTechStack = () => {
     const techStack = [
         'React Native', 'Flutter', 'Spring Boot', 'Angular',
         'JavaScript', 'Python', 'Java', 'Firebase',
-        'Docker', 'Git', 'AWS', 'MongoDB'
+        'Docker', 'Git', 'Azure', '.NET','Jira'
     ];
 
     techStack.forEach((tech, index) => {

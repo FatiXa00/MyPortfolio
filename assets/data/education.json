@@ -3,20 +3,20 @@
         {
             "period": "2020 - 2025",
             "school": "EMSI",
-            "degree": "5ème année en Informatique & Réseaux",
-            "specialization": "Option Miage"
+            "degree": "Diplômée ingénieure en Informatique & Réseaux",
+            "specialization": "Option MIAGE"
         },
         {
             "period": "2019 - 2020",
-            "school": "Université Hassan 2, Faculté des Sciences Ain Chock",
+            "school": "Université Hassan II, Faculté des Sciences Ain Chock",
             "degree": "Première année universitaire",
             "specialization": "Option SMP/SMC"
         },
         {
             "period": "2018 - 2019",
-            "school": "Lycée TAWFK EL HAKIM Nouaceur",
-            "degree": "Baccalauréat Scientifique",
-            "specialization": "Option Sciences Physiques-Chimies"
+            "school": "Lycée Tawfik El Hakim, Nouaceur",
+            "degree": "Baccalauréat scientifique",
+            "specialization": "Option Sciences Physiques-Chimie"
         }
     ]
 }

@@ -2,66 +2,84 @@
   "projects": [
     {
       "id": 1,
+      "title": "Application Web de Gestion des Services Métiers",
+      "year": "2025",
+      "tech": ["Spring Boot", "Spring Cloud", "Kafka", "Keycloak", "Swagger", "Postman"],
+      "category": "Application Web",
+      "description": "Une application web de gestion des services métiers offrant une architecture microservices et une gestion des droits utilisateurs.",
+      "highlights": ["Architecture microservices", "Gestion des droits utilisateurs"],
+      "image": "images/me.png"
+    },
+    {
+      "id": 2,
       "title": "Digital Banking",
       "year": "2024",
       "tech": ["JEE", "Angular", "MySQL"],
       "category": "Application Web",
       "description": "Une plateforme bancaire numérique moderne offrant des transactions financières sécurisées et une gestion des comptes utilisateurs.",
-      "highlights": ["Authentification sécurisée", "Transactions en temps réel", "Design réactif"]
+      "highlights": ["Authentification sécurisée", "Transactions en temps réel", "Design réactif"],
+      "image": "images/me.png"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "HeartCare",
       "year": "2022-2024",
       "tech": ["Django", "Jira", "Méthodologies Agile"],
       "category": "Santé",
       "description": "Projet d'intégration axé sur la gestion et le suivi des données de santé en utilisant l'architecture MVC et des pratiques Agile.",
-      "highlights": ["Gestion des données de santé", "Suivi en temps réel", "Intégration Agile avec Jira"]
+      "highlights": ["Gestion des données de santé", "Suivi en temps réel", "Intégration Agile avec Jira"],
+      "image": "images/me.png"
+      
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "SalesMaster",
       "year": "2024",
       "tech": ["Spring Boot", "Angular", "PostgreSQL"],
       "category": "Application Web",
       "description": "Une application de gestion des ventes offrant le suivi des données, des analyses et des rapports détaillés.",
-      "highlights": ["Visualisation des données", "Rapports analytiques", "Pratiques Agile"]
+      "highlights": ["Visualisation des données", "Rapports analytiques", "Pratiques Agile"],
+      "image": "images/me.png"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "Quiz",
       "year": "2024",
       "tech": ["Java", "Android"],
       "category": "Application Mobile",
       "description": "Application mobile interactive de quiz pour des objectifs éducatifs, avec un suivi en temps réel.",
-      "highlights": ["Évaluation en temps réel", "Suivi des progrès", "Apprentissage interactif"]
+      "highlights": ["Évaluation en temps réel", "Suivi des progrès", "Apprentissage interactif"],
+      "image": "images/me.png"
     },
     {
-      "id": 5,
+      "id": 6,
       "title": "FitWave",
       "year": "2024",
       "tech": ["React Native", "Expo", "Firebase", "Figma"],
       "category": "Application Mobile",
       "description": "Application mobile dédiée à la gestion de la santé personnelle, incluant le suivi des activités physiques, de la nutrition et des rendez-vous médicaux.",
-      "highlights": ["Suivi des activités physiques", "Gestion des rendez-vous médicaux", "Suivi de la nutrition", "Objectifs de bien-être"]
+      "highlights": ["Suivi des activités physiques", "Gestion des rendez-vous médicaux", "Suivi de la nutrition", "Objectifs de bien-être"],
+      "image": "images/me.png"
     },
     {
-      "id": 6,
+      "id": 7,
       "title": "Application Flutter de Classification des Fruits",
       "year": "2024",
       "tech": ["Flutter", "CNN", "RAG Model", "Firebase"],
       "category": "Application Mobile",
       "description": "Application mobile innovante permettant la classification des fruits à partir d'une photo et intégrant un chatbot interactif utilisant un modèle RAG pour des réponses personnalisées.",
-      "highlights": ["Classification des fruits via un modèle CNN", "Interaction personnalisée grâce au chatbot RAG", "Interface utilisateur intuitive", "Photographie et analyse en temps réel"]
+      "highlights": ["Classification des fruits via un modèle CNN", "Interaction personnalisée grâce au chatbot RAG", "Interface utilisateur intuitive", "Photographie et analyse en temps réel"],
+      "image": "images/me.png"
     },
     {
-      "id": 7,
+      "id": 8,
       "title": "Modèle de Prédiction de Trading",
       "year": "2024",
       "tech": ["Python", "LSTM", "RNN", "TensorFlow"],
       "category": "Machine Learning",
       "description": "Développement d'un modèle de machine learning basé sur LSTM et RNN pour la prédiction des tendances de trading à partir de séries temporelles financières.",
-      "highlights": ["Analyse des séries temporelles pour la prédiction des prix", "Utilisation de LSTM pour capturer les dépendances à long terme", "Visualisation des résultats pour interprétation", "Optimisation des performances grâce à TensorFlow"]
+      "highlights": ["Analyse des séries temporelles pour la prédiction des prix", "Utilisation de LSTM pour capturer les dépendances à long terme", "Visualisation des résultats pour interprétation", "Optimisation des performances grâce à TensorFlow"],
+      "image": "images/me.png"
     },
     {
       "title": "MovieApp",
@@ -75,21 +93,22 @@
         "Interface utilisateur interactive et fluide",
         "Fonctionnalité de recherche et filtrage des films",
         "Affichage des cinémas et localisation sur Google Maps"
-      ]
+      ],
+      "image": "images/me.png"
     }
     
   ],
   "skills": {
-    "languages": ["C/C++/C#", "JavaScript", "Python", "Java", "TypeScript", "PHP"],
-    "frameworks": ["Angular", "Spring Boot:JEE", "Django", "Node.js", "React","Laravel"],
+    "languages": ["C/C++/C#", "JavaScript", "Python", "Java", "TypeScript", "PHP", "WPF"],
+    "frameworks": ["Angular", "Spring Boot:JEE", "Django", "Node.js", "Laravel"],
     "databases": ["Oracle", "SQL Server", "MySQL", "PL-SQL", "Firebase", "PostgreSQL"],
     "Gestion de Projet": ["Agile", "Scrum", "Jira"],
     "web": ["HTML", "CSS", "Bootstrap"],
     "mobile": ["React Native", "Flutter"],
     "devops": ["Azure", "Docker"],
     "OS": ["Windows", "Linux", "Mac"],
-    "IDE": ["Visual Studio Code", "IntelliJ IDEA", "Eclipse"],
-    "version control": ["Git", "GitHub"],
+    "IDE": ["Visual Studio Code", "IntelliJ IDEA", "Eclipse", "Visual Studio"],
+    "version control": ["Git", "GitHub","GitLab"],
     "Modelisation": ["UML", "Merise"],
     "API": ["REST", "GraphQL"],
     "test": ["Junit"],

@@ -1,7 +1,10 @@
 // Function to load JSON data
 async function loadData() {
     try {
-        const response = await fetch('../assets/data/projects.json');
+        const response = await fetch('assets/data/projects.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const data = await response.json();
         return data;
     } catch (error) {
@@ -10,44 +13,70 @@ async function loadData() {
     }
 }
 
-// Function to create skill cards
+// Function to create skill cards (Unchanged)
 function createSkillCard(category, skills) {
     const card = document.createElement('div');
     card.className = 'skill-card';
     
-    const title = document.createElement('h3');
-    title.textContent = category;
-    card.appendChild(title);
-
-    const list = document.createElement('ul');
-    skills.forEach(skill => {
-        const item = document.createElement('li');
-        item.textContent = skill;
-        list.appendChild(item);
-    });
-    card.appendChild(list);
-
+    card.innerHTML = `
+        <h3>${category}</h3>
+        <ul>
+            ${skills.map(skill => `<li>${skill}</li>`).join('')}
+        </ul>
+    `;
     return card;
 }
 
-// Function to create project cards
+// === NEW & IMPROVED FUNCTION TO CREATE PROJECT CARDS ===
 function createProjectCard(project) {
-    const card = document.createElement('div');
-    card.className = 'project-card';
+    const cardContainer = document.createElement('div');
+    cardContainer.className = 'project-card-container';
     
-    card.innerHTML = `
+    const cardInner = document.createElement('div');
+    cardInner.className = 'project-card-inner';
+
+    // Create the FRONT of the card (Unchanged)
+    const cardFront = document.createElement('div');
+    cardFront.className = 'project-card-front';
+    cardFront.innerHTML = `
         <h3>${project.title}</h3>
         <p class="project-year">${project.year}</p>
         <p class="project-description">${project.description}</p>
-        <div class="project-tech">
-            ${project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
-        </div>
         <ul class="project-highlights">
             ${project.highlights.map(h => `<li>${h}</li>`).join('')}
         </ul>
+        <div class="project-tech">
+            ${project.tech.map(t => `<span class="tech-tag">${t}</span>`).join('')}
+        </div>
     `;
 
-    return card;
+    // Create the BACK of the card
+    const cardBack = document.createElement('div');
+    cardBack.className = 'project-card-back';
+    
+    let mediaTag = '';
+    // Determine the style class: 'media-contain' for mockups, 'media-cover' for everything else.
+    const mediaClass = project.mediaStyle === 'contain' ? 'media-contain' : 'media-cover';
+
+    // Build the media tag with the correct class embedded directly
+    if (project.video) {
+        mediaTag = `<video class="${mediaClass}" src="${project.video}" autoplay loop muted playsinline></video>`;
+    } else if (project.image) {
+        mediaTag = `<img class="${mediaClass}" src="${project.image}" alt="Aperçu du projet ${project.title}">`;
+    }
+    
+    // Set the inner HTML for the back of the card
+    cardBack.innerHTML = `
+        ${mediaTag}
+        <p class="view-prompt">Cliquez pour retourner</p>
+    `;
+    
+    // Assemble the card
+    cardInner.appendChild(cardFront);
+    cardInner.appendChild(cardBack);
+    cardContainer.appendChild(cardInner);
+
+    return cardContainer;
 }
 
 // Initialize content
@@ -72,11 +101,17 @@ async function initializeContent() {
             projectsContainer.appendChild(card);
         });
     }
+    
+    // Add click event listeners for flipping
+    document.querySelectorAll('.project-card-container').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('is-flipped');
+        });
+    });
 
-    // Add animation classes
-    document.querySelectorAll('.skill-card, .project-card').forEach((card, index) => {
+    // Apply animation
+    document.querySelectorAll('.skill-card, .project-card-container').forEach((card, index) => {
         card.style.animationDelay = `${index * 0.1}s`;
-        card.classList.add('animated-element');
     });
 }
 
